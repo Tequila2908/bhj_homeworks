@@ -19,7 +19,7 @@ const checkWin = function () {
 for (i = 1; i < 10; i++) {
     let target = document.getElementById('hole' + i);
     target.onclick = function () {
-        if (target.className.includes("hole_has-mole") === true) {
+        if (target.className.includes("hole_has-mole")) {
             dead.textContent++;
             checkWin();
         } else {
