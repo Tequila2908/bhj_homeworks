@@ -3,6 +3,7 @@ const addTask = Array.from(document.getElementsByClassName('tasks__add'));
 const taskList = Array.from(document.getElementsByClassName('tasks__list'));
 
 function addOneTask (e) {
+	e.preventDefault();
 	if (input[0].value) {
 		let text = input[0].value;
 		let task = document.createElement('div');
